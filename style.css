@@ -11,3 +11,48 @@
  Tags:         one-column, two-columns, right-sidebar, accessibility-ready, custom-background, custom-colors, custom-header, custom-menu, editor-style, featured-images, flexible-header, microformats, post-formats, rtl-language-support, sticky-post, threaded-comments, translation-ready, blog
  Text Domain:  meinemarie
 */
+
+.site-inner {
+  max-width: 1750px;
+}
+
+@media screen and (min-width: 44.375em) {
+  .site {
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1750px;
+  }
+  .site-branding {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .site-branding .site-title a {
+    font-family: "Lucida Grande";
+    font-size: 33pt;
+    color: red;
+  }
+  .site-description {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 56.875em) {
+  .site-header-main {
+    flex-direction: column;
+  }
+}
+
+@media screen and (min-width: 61.5625em) {
+  .site-header {
+    background-color: darkgrey;
+    margin-bottom: 5.25em;
+    padding: 0px;
+  }
+  .site-header-menu {
+    padding: 0px 2em;
+    background-color: red;
+    width: 100%;
+    margin: 0px;
+  }
+}

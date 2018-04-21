@@ -1,0 +1,59 @@
+a {
+  color: <?php echo get_theme_mod('accent_color', '#d21720') ?>;
+}
+
+a:hover {
+  color: <?php echo get_theme_mod('accent_color_n1', '#e32831') ?>;
+}
+
+.entry-title a:hover, .entry-title a:focus {
+  color: <?php echo get_theme_mod('accent_color_n1', '#e32831') ?>;
+}
+
+.menu-toggle:hover, .menu-toggle:focus {
+  color: <?php echo get_theme_mod('accent_color_n1', '#e32831') ?>;
+  border-color: <?php echo get_theme_mod('accent_color_n1', '#e32831') ?>;
+}
+
+.site-header#masthead {
+  background-color: <?php echo get_theme_mod('frame_color', '#d3cece') ?>;
+}
+
+.site-branding .site-title a {
+  color: <?php echo get_theme_mod('header_textcolor', '#d21720') ?>;
+}
+
+.site-branding .site-title a:hover {
+  color: <?php echo get_theme_mod('header_hover_textcolor', '#e32831') ?>;
+}
+
+.main-navigation li>a {
+  color: <?php echo get_theme_mod('accent_text_color', '#ffffff') ?>;
+}
+
+.main-navigation li:hover>a {
+  color: <?php echo get_theme_mod('accent_text_color', '#ffffff') ?>;
+}
+
+.site-header-menu#site-header-menu {
+  background-color: <?php echo get_theme_mod('accent_color', '#d21720') ?>;
+}
+
+.widget-area> :first-child {
+  border-top: 4px solid <?php echo get_theme_mod('frame_color', '#d3cece') ?>;
+}
+
+button, .button, input[type="button"], input[type="reset"], input[type="submit"] {
+  background-color: <?php echo get_theme_mod('accent_color', '#d21720') ?>;
+  color: <?php echo get_theme_mod('accent_text_color', '#ffffff') ?>;
+}
+
+button:hover, button:focus, .button:hover, .button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+  background-color: <?php echo get_theme_mod('accent_color_n1', '#e32831') ?>;
+  color: <?php echo get_theme_mod('accent_text_color', '#ffffff') ?>;
+}
+
+button:active, .button:active, input[type="button"]:active, input[type="reset"]:active, input[type="submit"]:active {
+  background-color: <?php echo get_theme_mod('accent_color_n2', '#f43940') ?>;
+  color: <?php echo get_theme_mod('accent_text_color', '#ffffff') ?>;
+}

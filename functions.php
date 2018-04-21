@@ -23,3 +23,10 @@ function meinemarie_enqueue_styles() {
 add_action( 'wp_enqueue_scripts', 'meinemarie_enqueue_styles' );
 
 require get_stylesheet_directory() . '/inc/customizer.php';
+
+add_filter( 'wp_head', function() { ?>
+	<style type="text/css" id="meinemarie-customizer-api-css">
+		<?php require get_stylesheet_directory() . '/inc/customizable-styles.php.css'; ?>
+	</style>
+	<?php
+});

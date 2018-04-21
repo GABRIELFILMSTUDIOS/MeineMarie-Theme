@@ -41,45 +41,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
   text-align: center;
 }
 
-.site-header#masthead {
-  background-color: #d3cece;
-}
-
-.site-branding .site-title a {
-  color: #d21720;
-}
-
-.site-branding .site-title a:hover {
-  color: #e32831;
-}
-
-.main-navigation li>a {
-  color: white;
-}
-
-.main-navigation li:hover>a {
-  color: white;
-}
-
-a {
-  color: #d21720;
-}
-
-a:hover {
-  color: #e32831;
-}
-
-.entry-title a:hover, .entry-title a:focus {
-  color: #e32831;
-}
-
-.menu-toggle:hover, .menu-toggle:focus {
-  color: #e32831;
-  border-color: #e32831;
-}
-
 .site-header-menu#site-header-menu {
-  background-color: red;
   margin: 0px;
 }
 
@@ -92,8 +54,8 @@ a:hover {
   margin-right: 7.6923%;
 }
 
-.widget-area> :first-child {
-  border-top: 4px solid #d3cece;
+.widget {
+  border-top: 0px;
 }
 
 @media screen and (min-width: 44.375em) {
@@ -142,18 +104,4 @@ a:hover {
   .main-navigation .primary-menu>li:last-child {
     border-right: none;
   }
-  /* Redefine sizing of header a bit, so background color can be meaningfully set */
-  /* END Redefine sizing of header a bit */
-}
-
-/* Inputs */
-
-button, .button, input[type="button"], input[type="reset"], input[type="submit"] {
-  background-color: #d21720;
-  color: #ffffff;
-}
-
-button:hover, button:focus, .button:hover, .button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
-  background-color: #e32831;
-  color: #ffffff;
 }

@@ -21,3 +21,5 @@ function meinemarie_enqueue_styles() {
 }
 
 add_action( 'wp_enqueue_scripts', 'meinemarie_enqueue_styles' );
+
+require get_stylesheet_directory() . '/inc/customizer.php';

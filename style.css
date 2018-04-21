@@ -12,47 +12,148 @@
  Text Domain:  meinemarie
 */
 
-.site-inner {
-  max-width: 1750px;
+/* Override TwentySixteens space at the bottom of the page */
+
+body:not(.custom-background-image)::before, body:not(.custom-background-image)::after {
+  height: 0px;
+}
+
+/* Redefine sizing of header a bit, so background color can be meaningfully set */
+
+.site-header#masthead {
+  padding: 0px;
+  position: sticky;
+  z-index: 98;
+  top: 0px;
+}
+
+.site-content#content:before {
+  content: '';
+  display: block;
+  height: 1.9687em;
+}
+
+/* END Redefine sizing of header a bit */
+
+.site-branding {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.site-header#masthead {
+  background-color: #d3cece;
+}
+
+.site-branding .site-title a {
+  color: #d21720;
+}
+
+.site-branding .site-title a:hover {
+  color: #e32831;
+}
+
+.main-navigation li>a {
+  color: white;
+}
+
+.main-navigation li:hover>a {
+  color: white;
+}
+
+a {
+  color: #d21720;
+}
+
+a:hover {
+  color: #e32831;
+}
+
+.entry-title a:hover, .entry-title a:focus {
+  color: #e32831;
+}
+
+.menu-toggle:hover, .menu-toggle:focus {
+  color: #e32831;
+  border-color: #e32831;
+}
+
+.site-header-menu#site-header-menu {
+  background-color: red;
+  margin: 0px;
+}
+
+.main-navigation .primary-menu>li {
+  padding-left: 4.5455%;
+  padding-right: 4.5455%;
+}
+
+.menu-toggle#menu-toggle {
+  margin-right: 7.6923%;
+}
+
+.widget-area> :first-child {
+  border-top: 4px solid #d3cece;
 }
 
 @media screen and (min-width: 44.375em) {
+  /* Margin of the site on desktop */
   .site {
-    margin-bottom: 0px;
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 1750px;
+    margin: 0 auto;
+    width: calc(100% - 42px);
+    max-width: 1320px;
   }
-  .site-branding {
-    margin-left: auto;
-    margin-right: auto;
+  .site-header-menu#site-header-menu {
+    width: 100%;
+    margin: 0px;
   }
-  .site-branding .site-title a {
-    font-family: "Lucida Grande";
-    font-size: 33pt;
-    color: red;
+  .admin-bar .site-header#masthead {
+    top: 32px;
   }
-  .site-description {
-    display: none;
+  .site-content#content:before {
+    height: 3.9375em;
+  }
+  .entry-header, .post-thumbnail, .entry-content, .entry-summary, .entry-footer, .comments-area, .image-navigation, .post-navigation, .page-header, .page-content, .content-bottom-widgets {
+    margin-right: 7.6923%;
   }
 }
 
 @media screen and (min-width: 56.875em) {
+  /* Display menu under site title */
   .site-header-main {
     flex-direction: column;
   }
-}
-
-@media screen and (min-width: 61.5625em) {
-  .site-header {
-    background-color: darkgrey;
-    margin-bottom: 5.25em;
-    padding: 0px;
-  }
-  .site-header-menu {
-    padding: 0px 2em;
-    background-color: red;
+  .site-header-menu#site-header-menu {
     width: 100%;
+    padding-left: 4.5455%;
+    padding-right: 4.5455%;
     margin: 0px;
   }
+  ul.primary-menu {
+    display: flex;
+  }
+  .main-navigation .primary-menu>li {
+    border-right: 1px solid black;
+    flex-grow: 1;
+    text-align: center;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+  .main-navigation .primary-menu>li:last-child {
+    border-right: none;
+  }
+  /* Redefine sizing of header a bit, so background color can be meaningfully set */
+  /* END Redefine sizing of header a bit */
+}
+
+/* Inputs */
+
+button, .button, input[type="button"], input[type="reset"], input[type="submit"] {
+  background-color: #d21720;
+  color: #ffffff;
+}
+
+button:hover, button:focus, .button:hover, .button:focus, input[type="button"]:hover, input[type="button"]:focus, input[type="reset"]:hover, input[type="reset"]:focus, input[type="submit"]:hover, input[type="submit"]:focus {
+  background-color: #e32831;
+  color: #ffffff;
 }
